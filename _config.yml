@@ -5,7 +5,7 @@
 
 #######################################################################################
 # Book settings
-title                       : Intro to Git and Jupyter - 3rd Jack Eddy Symposium  # The title of the book. Will be placed in the left navbar.
+title                       : Demo of Jupyter and Git for EarthCube2022  # The title of the book. Will be placed in the left navbar.
 author                      : Fernando Pérez # The author of the book
 copyright                   : "2022"  # Copyright year to be placed in the footer
 logo                        : logo.png  # A path to the book logo

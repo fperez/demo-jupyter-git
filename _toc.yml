@@ -1,10 +1,11 @@
 format: jb-book
 root: index
 parts:
-- caption: Git
+- caption: Demos
   chapters:
-  - file: intro-git/Git-Tutorial
-  - file: intro-git/git-visuals
+  - file: markdown-demo
+  - file: latex/README
+  - file: climate-data
 - caption: Jupyter
   chapters:
   - file: intro-jupyter/Index
@@ -13,5 +14,8 @@ parts:
   - file: intro-jupyter/03-Rich-Output
   - file: intro-jupyter/04-Custom-Display-Logic
   - file: intro-jupyter/05-widgets-interact
-#  - file: climate-data
+- caption: Git
+  chapters:
+  - file: intro-git/Git-Tutorial
+  - file: intro-git/git-visuals
  
