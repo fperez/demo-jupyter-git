@@ -18,4 +18,6 @@ parts:
   chapters:
   - file: intro-git/Git-Tutorial
   - file: intro-git/git-visuals
+  - file: intro-git/github-authentication
+  - file: intro-git/GHAUTH
  
