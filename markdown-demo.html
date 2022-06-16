@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>A demonstration of the Jupyter ecosystem for the EarthCube 2022 meeting &#8212; Demo of Jupyter and Git for EarthCube2022</title>
+    <title>A simple markdown demo &#8212; Demo of Jupyter and Git for EarthCube2022</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,9 +50,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="A simple markdown demo" href="markdown-demo.html" />
+    <link rel="next" title="Using LaTeX with Jupyter" href="latex/README.html" />
+    <link rel="prev" title="A demonstration of the Jupyter ecosystem for the EarthCube 2022 meeting" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -87,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="bd-sidebar noprint" id="site-navigation">
     <div class="bd-sidebar__content">
         <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="#">
+    <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
@@ -106,8 +109,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
                     A demonstration of the Jupyter ecosystem for the EarthCube 2022 meeting
                 </a>
             </li>
@@ -117,9 +120,9 @@ const thebe_selector_output = ".output, .cell_output"
   Demos
  </span>
 </p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown-demo.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    A simple markdown demo
   </a>
  </li>
@@ -260,7 +263,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/index.md"
+        <a href="_sources/markdown-demo.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -309,7 +312,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>A demonstration of the Jupyter ecosystem for the EarthCube 2022 meeting</h1>
+                <h1>A simple markdown demo</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -321,15 +324,32 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="a-demonstration-of-the-jupyter-ecosystem-for-the-earthcube-2022-meeting">
-<h1>A demonstration of the Jupyter ecosystem for the EarthCube 2022 meeting<a class="headerlink" href="#a-demonstration-of-the-jupyter-ecosystem-for-the-earthcube-2022-meeting" title="Permalink to this headline">#</a></h1>
-<p>Quick demo for using Jupyter tools (and git) in a hosted JupyterHub/Lab setting.</p>
-<p>A repo to play with during a working session for the 2022 EarthCube meeting.</p>
-<div class="toctree-wrapper compound">
+  <section class="tex2jax_ignore mathjax_ignore" id="a-simple-markdown-demo">
+<h1>A simple markdown demo<a class="headerlink" href="#a-simple-markdown-demo" title="Permalink to this headline">#</a></h1>
+<p>Markdown can contain <em>formatting</em>,</p>
+<ul class="simple">
+<li><p>lists</p></li>
+<li><p>of</p></li>
+<li><p>items,</p></li>
+</ul>
+<p>images:</p>
+<p><img alt="" src="_images/logo.png" /></p>
+<p>mathematical <span class="math notranslate nohighlight">\(\alpha + \beta\)</span> content:</p>
+<div class="math notranslate nohighlight">
+\[
+\rho \left( \frac{\partial \mathbf{u}}{\partial t} + \mathbf{u} \cdot \nabla \mathbf{u} \right) =
+    -\nabla P + \eta \nabla^2 \mathbf{u} + \rho \mathbf{g}.
+\]</div>
+<p>and also code:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
 </div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
+<p>which can be executed as individual cells:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">g</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">);</span>
+</pre></div>
 </div>
 </section>
 
@@ -360,10 +380,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="markdown-demo.html" title="next page">
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">A demonstration of the Jupyter ecosystem for the EarthCube 2022 meeting</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="latex/README.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">A simple markdown demo</p>
+        <p class="prev-next-title">Using LaTeX with Jupyter</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
