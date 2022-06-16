@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>An overview of Jupyter tools &#8212; Demo of Jupyter and Git for EarthCube2022</title>
+    <title>Github Authentication from a hosted JupyterHub &#8212; Demo of Jupyter and Git for EarthCube2022</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -52,8 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="A quick, practical intro to the Jupyter Notebook" href="01-Intro-Jupyter.html" />
-    <link rel="prev" title="Interactive Analysis of Climate Data" href="../climate-data.html" />
+    <link rel="next" title="Activate GitHub Authentication" href="GHAUTH.html" />
+    <link rel="prev" title="Git Visuals" href="git-visuals.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -140,34 +140,34 @@ const thebe_selector_output = ".output, .cell_output"
   Jupyter
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro-jupyter/Index.html">
    An overview of Jupyter tools
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="01-Intro-Jupyter.html">
+  <a class="reference internal" href="../intro-jupyter/01-Intro-Jupyter.html">
    A quick, practical intro to the Jupyter Notebook
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="02-Beyond-Plain-Python.html">
+  <a class="reference internal" href="../intro-jupyter/02-Beyond-Plain-Python.html">
    IPython: beyond plain Python
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="03-Rich-Output.html">
+  <a class="reference internal" href="../intro-jupyter/03-Rich-Output.html">
    Rich Output
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="04-Custom-Display-Logic.html">
+  <a class="reference internal" href="../intro-jupyter/04-Custom-Display-Logic.html">
    Custom Display Logic
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="05-widgets-interact.html">
+  <a class="reference internal" href="../intro-jupyter/05-widgets-interact.html">
    Widgets without writing widgets: interact
   </a>
  </li>
@@ -177,24 +177,24 @@ const thebe_selector_output = ".output, .cell_output"
   Git
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../intro-git/Git-Tutorial.html">
+  <a class="reference internal" href="Git-Tutorial.html">
    An interactive Git Tutorial: the tool you didn’t know you needed
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../intro-git/git-visuals.html">
+  <a class="reference internal" href="git-visuals.html">
    Git Visuals
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../intro-git/github-authentication.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Github Authentication from a hosted JupyterHub
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../intro-git/GHAUTH.html">
+  <a class="reference internal" href="GHAUTH.html">
    Activate GitHub Authentication
   </a>
  </li>
@@ -257,7 +257,7 @@ title="Toggle navigation"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/intro-jupyter/Index.ipynb"
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/intro-git/github-authentication.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -300,7 +300,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/intro-jupyter/Index.ipynb"
+        <a href="../_sources/intro-git/github-authentication.ipynb"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -337,23 +337,70 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#usage">
+   Usage
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#access-setup">
+   Access setup
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>An overview of Jupyter tools</h1>
+                <h1>Github Authentication from a hosted JupyterHub</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#usage">
+   Usage
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#access-setup">
+   Access setup
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -361,15 +408,30 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="an-overview-of-jupyter-tools">
-<h1>An overview of Jupyter tools<a class="headerlink" href="#an-overview-of-jupyter-tools" title="Permalink to this headline">#</a></h1>
-<ol class="simple">
-<li><p><a class="reference internal" href="01-Intro-Jupyter.html"><span class="doc std std-doc">Intro-Jupyter</span></a></p></li>
-<li><p><a class="reference internal" href="02-Beyond-Plain-Python.html"><span class="doc std std-doc">Beyond-Plain-Python</span></a></p></li>
-<li><p><a class="reference internal" href="03-Rich-Output.html"><span class="doc std std-doc">Rich Output</span></a></p></li>
-<li><p><a class="reference internal" href="04-Custom-Display-Logic.html"><span class="doc std std-doc">Custom display logic</span></a></p></li>
-<li><p><a class="reference internal" href="05-widgets-interact.html"><span class="doc std std-doc">Widgets-interact</span></a></p></li>
-</ol>
+  <section class="tex2jax_ignore mathjax_ignore" id="github-authentication-from-a-hosted-jupyterhub">
+<h1>Github Authentication from a hosted JupyterHub<a class="headerlink" href="#github-authentication-from-a-hosted-jupyterhub" title="Permalink to this headline">#</a></h1>
+<p>When using a cloud-hosted JupyterHub, it is important to have a secure <em>and</em> convenient way to control how to push new code to GitHub or access private repositories.  We recommend using the <a class="reference external" href="https://github.com/yuvipanda/gh-scoped-creds">gh-scoped-creds</a> utility developed by <a class="reference external" href="https://github.com/yuvipanda">Yuvi Panda</a>. Once installed and properly configured on a JupyterHub instance (that is something your Hub administrator needs to set up), it allows you to have fine-grained control over which repositories you want to allow push and pull from. When active, you can access those repos over HTTPS (<em>not</em> over SSH), without having to constantly type passwords or tokens.  The authentication is active for the entire hub, so it works from any terminal.</p>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">#</a></h2>
+<p>To use this tool, run the following code</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">gh_scoped_creds</span>
+<span class="o">%</span><span class="n">ghscopedcreds</span>
+</pre></div>
+</div>
+<p>and follow the instructions (the companion <a class="reference internal" href="GHAUTH.html"><span class="doc std std-doc">GHAUTH</span></a> notebook in this repository is available as a convenient mnemonic you can keep in your favorites for quick and frequent use of this).</p>
+</section>
+<section id="access-setup">
+<h2>Access setup<a class="headerlink" href="#access-setup" title="Permalink to this headline">#</a></h2>
+<p>Note that the first time you use this tool on a new hub, you will <em>not</em> be able to actually connect yet. You first have to go to GitHub (the tool will show you the URL to go to, as it is hub-specific) and configure it to decide which repos you would like to allow access to. You also need to revisit that same link if you want to change the scope of this access, either to add new orgs/repos or to remove them.</p>
+<p>First, you need to allow installation of this app (the “tunnel” between the JupyterHub and GitHub is called an App on Github):</p>
+<p><img alt="image.png" src="../_images/ghauth-install-1.png" /></p>
+<p>When you click “Install”, GitHub will ask you <em>where</em> you want it installed - you can choose to add it to your personal account or to orgs you work on, so you can connect to those orgs:</p>
+<p><img alt="image.png" src="../_images/ghauth-install-2.png" /></p>
+<p>Within each account/org, you then have to choose whether to allow access to all repositories or only to specific ones:</p>
+<p><img alt="image.png" src="../_images/ghauth-install-3.png" /></p>
+<p>Once the process is completed, GitHub will show you the state of your setup with a page like this one:
+<img alt="image.png" src="../_images/ghauth-install-4.png" /></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -385,7 +447,7 @@ title="Print to PDF"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./intro-jupyter"
+            path: "./intro-git"
         },
         predefinedOutput: true
     }
@@ -399,17 +461,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="../climate-data.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="git-visuals.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Interactive Analysis of Climate Data</p>
+            <p class="prev-next-title">Git Visuals</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="01-Intro-Jupyter.html" title="next page">
+    <a class='right-next' id="next-link" href="GHAUTH.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">A quick, practical intro to the Jupyter Notebook</p>
+        <p class="prev-next-title">Activate GitHub Authentication</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
